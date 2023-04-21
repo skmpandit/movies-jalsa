@@ -4,7 +4,7 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-ico
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import ContentWrapper from '../contentWrapper/ContentWrapper'
-import Img from '../lazyLoadImage/img'
+import Img from '../lazyLoadImage/Img'
 import PosterFallback from "../../assets/no-poster.png"
 import './style.scss'
 import CircleRating from '../circleRating/CircleRating'
