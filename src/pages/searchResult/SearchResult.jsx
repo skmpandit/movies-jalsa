@@ -5,8 +5,9 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import { fetchDataFromApi } from "../../utils/api"
 import ContentWrapper from '../../components/contentWrapper/ContentWrapper'
 import noResults from "../../assets/no-results.png"
-import Spinner from '../../components/spinner/spinner'
+import Spinner from '../../components/spinner/Spinner'
 import MovieCard from '../../components/movieCard/MovieCard'
+import Img from '../../components/lazyLoadImage/img'
 
 
 const SearchResult = () => {
@@ -64,7 +65,8 @@ const SearchResult = () => {
             </>
           ) : (
             <span className="resultNotFound">
-              Sorry, Results not found
+              <Img src={noResults} className="resultNotFoundImg"/>
+              <span className="resultNotFoundText">Opps!</span>
             </span>
           )}
         </ContentWrapper>

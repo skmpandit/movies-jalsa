@@ -12,6 +12,21 @@
         color: white;
         margin-bottom: 25px;
     }
+    .resultNotFound {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .resultNotFoundImg {
+            width: 400px;
+        }
+        .resultNotFoundText {
+            font-size: 40px;
+            margin-top: -20px;
+        }
+    }
     .content {
         display: flex;
         flex-flow: row wrap;
